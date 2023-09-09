@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn"><i class="fa-solid fa-arrow-up fa-lg" style="color: #ffffff;"></i></button>
+    <header>
+        <div class="navbar pe-5 ps-5">
+            <div class="logo d-flex align-items-center">
+                <a href="index.html" class="ms-5"><img src="image/logo.png" alt=""></a>
+                <a href="index.html">
+                    <h4>shopping.</h4>
+                </a>
+            </div>
+
+            <div class="dropdown-center">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Kategoriler
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Tüm Ürünler</a></li>
+                  <li><a class="dropdown-item" href="#">Telefon</a></li>
+                  <li><a class="dropdown-item" href="#">Televizyon</a></li>
+                  <li><a class="dropdown-item" href="#">Bilgisayar</a></li>
+                  <li><a class="dropdown-item" href="#">Kulaklık</a></li>
+                  <li><a class="dropdown-item" href="#">Scooter</a></li>
+                  <li><a class="dropdown-item" href="#">Güvenlik Kamerası</a></li>
+                </ul>
+              </div>
+
+              <div class="p-1 bg-light rounded rounded-pill shadow-sm me-5">
+                <div class="input-group">
+                  <input type="search" placeholder="Aramak İstediğiniz Ürünü Yazınız" aria-describedby="button-addon1" class="form-control border-0 bg-light">
+                  <div class="input-group-append">
+                    <button id="button-addon1" type="submit" class="btn btn-link text-primary"><i class="fa fa-search"></i></button>
+                  </div>
+                </div>
+              </div>
+            <div class="user-icons d-flex me-5">
+                <div class="account me-4"><a href=""><i class="fa-regular fa-user fa-xl" style="color: #000000;"></i></a></div>
+                <div class="wishlist me-4"><a href=""><i class="fa-regular fa-heart fa-xl" style="color: #000000;"></i></a></div>
+                <div class="cart me-4"><a href=""><i class="fa-solid fa-cart-shopping fa-xl" style="color: #000000;"></i></a></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="detail mt-5 mb-5">
+        <div class="card">
+            <div class="row g-0">
+                <div class="col-md-6 border-end">
+                    <div class="d-flex flex-column justify-content-center">
+                        <div class="main_image"> <img src="image/airpods/1.jpg" id="main_product_image" width="350">
+                        </div>
+                        <div class="thumbnail_images">
+                            <ul id="thumbnail">
+                                <li><img onclick="changeImage(this)" src="image/airpods/1.jpg" width="70"></li>
+                                <li><img onclick="changeImage(this)" src="image/airpods/2.jpg" width="70"></li>
+                                <li><img onclick="changeImage(this)" src="image/airpods/3.jpg" width="70"></li>
+                                <li><img onclick="changeImage(this)" src="image/airpods/4.jpg" width="70"></li>
+                                <li><img onclick="changeImage(this)" src="image/airpods/5.jpg" width="70"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-3 right-side">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h3>Airpods Pro (2.Nesil)</h3> <span class="heart"><i class='bx bx-heart'></i></span>
+                        </div>
+                        <div class="mt-2 pr-3 content">
+                            <p>Aktif Gürültü Engelleme, dışarıdan gelen gürültüleri önceki nesle kıyasla 2 kata kadar
+                                daha fazla azaltıyor. Uzamsal Ses, dinleme deneyimini olağanüstü kişisel bir düzeye
+                                taşıyor. Dokunmatik denetim, tek bir kaydırma hareketiyle sesi ayarlamanızı sağlıyor.
+                                Tek şarjla 6 saatlik pil ömrü ise gerçek bir güç gösterisi.</p>
+                        </div>
+                        <h3>₺7.829,00</h3>
+                        <div class="ratings d-flex flex-row align-items-center">
+                            <div class="d-flex flex-row"> <i class='bx bxs-star'></i> <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i> <i class='bx bxs-star'></i> <i class='bx bx-star'></i>
+                            </div>
+                            <span>441 reviews</span>
+                        </div>
+                        <div class="mt-5"> <span class="fw-bold">Color</span>
+                            <div class="colors">
+                                <ul id="marker">
+                                    <li id="marker-1"></li>
+                                    <li id="marker-2"></li>
+                                    <li id="marker-3"></li>
+                                    <li id="marker-4"></li>
+                                    <li id="marker-5"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="buttons d-flex flex-row mt-5 gap-3">
+                            <button class="btn btn-outline-dark">Satın Al</button>
+                            <button class="btn btn-dark">Sepete Ekle</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <!-- Footer Start -->
+    <footer>
+        <div class="footer-wrap">
+            <div class="container first_class">
+                <div class="row d-flex justify-content-around">
+                    <div class="col-md-4 col-sm-6">
+                        <form class="newsletter">
+                            <input type="text" placeholder="Aramak İstediğiniz Ürünü Yazınız">
+                        </form>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="col-md-12">
+                            <div class="standard_social_links">
+                                <div>
+                                    <li class="round-btn btn-facebook">
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li class="round-btn btn-linkedin">
+                                        <a href="#"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li class="round-btn btn-twitter">
+                                        <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li class="round-btn btn-instagram">
+                                        <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li class="round-btn btn-whatsapp">
+                                        <a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li class="round-btn btn-envelop">
+                                        <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="second_class">
+                <div class="container second_class_bdr">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 d-flex align-items-center justify-content-center">
+
+                            <div class="footer-logo d-flex align-items-center text-white">
+                                <img src="image/logo.png" alt="logo" style="width: 100px; height: 100px;">
+                                <h4>shopping.</h4>
+                            </div>
+                
+                        </div>
+                        <div class="col-md-2 col-sm-6">
+                            <h3>Kategoriler</h3>
+                            <ul class="footer-links">
+                                <li><a href="index.html">Tüm Ürünler</a>
+                                </li>
+                                <li><a href="#">Telefon</a>
+                                </li>
+                                <li><a href="#">Televizyon</a>
+                                </li>
+                                <li><a href="#">Bilgisayar</a>
+                                </li>
+                                <li><a href="#">Kulaklık</a>
+                                </li>
+                                <li><a href="#">Scooter</a>
+                                </li>
+                                <li><a href="#">Güvenlik Kamerası</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <h3>Kişisel Verilerin Korunması ve Gizliliği</h3>
+                            <ul class="footer-category">
+                                <li><a href="#">Kişisel Verilere Dair Aydınlatma</a>
+                                </li>
+                                <li><a href="#">Çerez Aydınlatma Metni</a>
+                                </li>
+                                <li><a href="#">KVK İşleme Politikası</a>
+                                </li>
+                                <li><a href="#">Veri Sahibi Başvuru Formu</a>
+                                </li>
+                                <li><a href="#">Güvenlik Açığı Bildirim Programı</a>
+                                </li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <h3>Güvenli Alışveriş</h3>
+                            <ul class="footer-links">
+                                <li><a href="#">Bilgi Toplumu Hizmetleri</a>
+                                </li>
+                                <li><a href="#">e-Arşiv Fatura Sorgulama</a>
+                                </li>
+                                <li><a href="#">Yardım</a>
+                                </li>
+                                <li><a href="#">Kurumsal Satış</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+                <div class="container-fluid">
+                    <div class="copyright"> Copyright 2023 | b-shopping. San. & Tic. A.Ş</div>
+                </div>
+
+        </div>
+
+    </footer>
+    <!-- Footer End -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

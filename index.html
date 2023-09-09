@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <!-- Header Start -->
+    <header>
+        <div class="navbar pe-5 ps-5">
+            <div class="logo d-flex align-items-center">
+                <a href="index.html" class="ms-5"><img src="image/logo.png" alt=""></a>
+                <a href="index.html">
+                    <h4>shopping.</h4>
+                </a>
+            </div>
+
+            <div class="dropdown-center">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Kategoriler
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Tüm Ürünler</a></li>
+                  <li><a class="dropdown-item" href="#">Telefon</a></li>
+                  <li><a class="dropdown-item" href="#">Televizyon</a></li>
+                  <li><a class="dropdown-item" href="#">Bilgisayar</a></li>
+                  <li><a class="dropdown-item" href="#">Kulaklık</a></li>
+                  <li><a class="dropdown-item" href="#">Scooter</a></li>
+                  <li><a class="dropdown-item" href="#">Güvenlik Kamerası</a></li>
+                </ul>
+              </div>
+
+              <div class="p-1 bg-light rounded rounded-pill shadow-sm me-5">
+                <div class="input-group">
+                  <input type="search" placeholder="Aramak İstediğiniz Ürünü Yazınız" aria-describedby="button-addon1" class="form-control border-0 bg-light">
+                  <div class="input-group-append">
+                    <button id="button-addon1" type="submit" class="btn btn-link text-primary"><i class="fa fa-search"></i></button>
+                  </div>
+                </div>
+              </div>
+            <div class="user-icons d-flex me-5">
+                <div class="account me-4"><a href=""><i class="fa-regular fa-user fa-xl" style="color: #000000;"></i></a></div>
+                <div class="wishlist me-4"><a href=""><i class="fa-regular fa-heart fa-xl" style="color: #000000;"></i></a></div>
+                <div class="cart me-4"><a href=""><i class="fa-solid fa-cart-shopping fa-xl" style="color: #000000;"></i></a></div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+    <!-- Carousel Start -->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="image/000_facebook_cover_black_friday_sale_covers_.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="image/001_facebook_cover_black_friday_sale_covers_.jpeg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Carousel End -->
+    <!-- Products Section Start -->
+    <section class="section-products">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-md-8 col-lg-6">
+                    <div class="header">
+                        <h3>Featured Product</h3>
+                        <h2>Tüm Ürünler</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Single Product -->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div id="product-1" class="single-product">
+                        <div class="part-1">
+                            <ul>
+                                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                                <li><a href="airpods.html"><i class="fas fa-expand"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="part-2">
+                            <h3 class="product-title">Airpods Pro (2.Nesil)</h3>
+                            <h4 class="product-price">₺7.829,00</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Product -->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div id="product-2" class="single-product">
+                        <div class="part-1">
+                            <span class="discount">15% off</span>
+                            <ul>
+                                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                                <li><a href="#"><i class="fas fa-expand"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="part-2">
+                            <h3 class="product-title">HP Victus 15-FB0009NT </h3>
+                            <h4 class="product-old-price">₺19.999,00</h4>
+                            <h4 class="product-price">₺16.999,15</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Product -->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div id="product-3" class="single-product">
+                        <div class="part-1">
+                            <ul>
+                                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                                <li><a href="#"><i class="fas fa-expand"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="part-2">
+                            <h3 class="product-title">Iphone 11 128GB</h3>
+                            <!-- <h4 class="product-old-price">$79.99</h4> -->
+                            <h4 class="product-price">₺24.599,00</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Product -->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div id="product-4" class="single-product">
+                        <div class="part-1">
+                            <span class="new">new</span>
+                            <ul>
+                                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                                <li><a href="#"><i class="fas fa-expand"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="part-2">
+                            <h3 class="product-title">TECNO TH300 360° Kamera 2K</h3>
+                            <h4 class="product-price">₺600,00</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Product -->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div id="product-5" class="single-product">
+                        <div class="part-1">
+                            <ul>
+                                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                                <li><a href="#"><i class="fas fa-expand"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="part-2">
+                            <h3 class="product-title">Lenovo IdeaPad 3</h3>
+                            <!-- <h4 class="product-old-price">$79.99</h4> -->
+                            <h4 class="product-price">₺10.999,00</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Product -->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div id="product-6" class="single-product">
+                        <div class="part-1">
+                            <ul>
+                                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                                <li><a href="#"><i class="fas fa-expand"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="part-2">
+                            <h3 class="product-title">Samsung Galaxy S23</h3>
+                            <!-- <h4 class="product-old-price">$79.99</h4> -->
+                            <h4 class="product-price">₺30.999,00</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Product -->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div id="product-7" class="single-product">
+                        <div class="part-1">
+                            <ul>
+                                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                                <li><a href="#"><i class="fas fa-expand"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="part-2">
+                            <h3 class="product-title">Navee N65 500w Elektrikli Scooter</h3>
+                            <!-- <h4 class="product-old-price">$79.99</h4> -->
+                            <h4 class="product-price">₺18.999,00</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Product -->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div id="product-8" class="single-product">
+                        <div class="part-1">
+                            <ul>
+                                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                                <li><a href="#"><i class="fas fa-expand"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="part-2">
+                            <h3 class="product-title">TCL 58P635 58' 4K UHD</h3>
+                            <!-- <h4 class="product-old-price">$79.99</h4> -->
+                            <h4 class="product-price">₺16.299,00</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Product -->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div id="product-9" class="single-product">
+                        <div class="part-1">
+                            <ul>
+                                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                                <li><a href="#"><i class="fas fa-expand"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="part-2">
+                            <h3 class="product-title">Vivo V23 256GB 5G</h3>
+                            <!-- <h4 class="product-old-price">$79.99</h4> -->
+                            <h4 class="product-price">₺17.999,00</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Product -->
+            </div>
+        </div>
+    </section>
+    <!-- Product Section End -->
+    <!-- Info Start -->
+    <div class="services p-2 bg-success text-white">
+        <div class="subjects p-3 mt-2">
+            <div class="contents d-flex text-center">
+                <div class="col-xl-2 col-lg-4 col-md-6">
+                    <i class="fa-solid fa-truck-ramp-box fa-xl" style="color: #ffffff;"></i>
+                    <p>KARGO BEDAVA</p>
+                </div>
+                <div class="col-xl-2 col-lg-4 col-md-6">
+                    <i class="fa-solid fa-truck fa-xl" style="color: #ffffff;"></i>
+                    <p>STANDART TESLİMAT</p>
+                </div>
+                <div class="col-xl-2 col-lg-4 col-md-6">
+                    <i class="fa-solid fa-truck-fast fa-xl" style="color: #ffffff;"></i>
+                    <p>HIZLI TESLİMAT</p>
+                </div>
+                <div class="col-xl-2 col-lg-4 col-md-6">
+                    <i class="fa-solid fa-store fa-xl" style="color: #ffffff;"></i>
+                    <p>MAĞAZADAN TESLİM</p>
+                </div>
+                <div class="col-xl-2 col-lg-4 col-md-6">
+                    <i class="fa-solid fa-calendar-days fa-xl" style="color: #ffffff;"></i>
+                    <p>KOLAY İADE</p>
+                </div>
+                <div class="col-xl-2 col-lg-4 col-md-6">
+                    <i class="fa-solid fa-phone fa-xl" style="color: #ffffff;"></i>
+                    <p>TELEFONLA SİPARİŞ</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Info End -->
+    <div class="banks mt-5 mb-5">
+        <div class="bank-cards d-flex justify-content-around">
+            <div class="ziraat"><img src="image/bankkart-logo.png" alt=""></div>
+            <div class="fiba"><img src="image/fibabanka-logo-black.png" alt=""></div>
+            <div class="maximum"><img src="image/maximum-logo.png" alt=""></div>
+            <div class="yapikredi"><img src="image/yapi_kredi_bankasi-min.png" alt=""></div>
+        </div>
+    </div>
+    <!-- Footer Start -->
+    <footer>
+        <div class="footer-wrap">
+            <div class="container first_class">
+                <div class="row d-flex justify-content-around">
+                    <div class="col-md-4 col-sm-6">
+                        <form class="newsletter">
+                            <input type="text" placeholder="Aramak İstediğiniz Ürünü Yazınız">
+                        </form>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="col-md-12">
+                            <div class="standard_social_links">
+                                <div>
+                                    <li class="round-btn btn-facebook">
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li class="round-btn btn-linkedin">
+                                        <a href="#"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li class="round-btn btn-twitter">
+                                        <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li class="round-btn btn-instagram">
+                                        <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li class="round-btn btn-whatsapp">
+                                        <a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li class="round-btn btn-envelop">
+                                        <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="second_class">
+                <div class="container second_class_bdr">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 d-flex align-items-center justify-content-center">
+                            <div class="footer-logo d-flex align-items-center text-white">
+                                <img src="image/logo.png" alt="logo" style="width: 100px; height: 100px;">
+                                <h4>shopping.</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-6">
+                            <h3>Kategoriler</h3>
+                            <ul class="footer-links">
+                                <li><a href="index.html">Tüm Ürünler</a>
+                                </li>
+                                <li><a href="#">Telefon</a>
+                                </li>
+                                <li><a href="#">Televizyon</a>
+                                </li>
+                                <li><a href="#">Bilgisayar</a>
+                                </li>
+                                <li><a href="#">Kulaklık</a>
+                                </li>
+                                <li><a href="#">Scooter</a>
+                                </li>
+                                <li><a href="#">Güvenlik Kamerası</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <h3>Kişisel Verilerin Korunması ve Gizliliği</h3>
+                            <ul class="footer-category">
+                                <li><a href="#">Kişisel Verilere Dair Aydınlatma</a>
+                                </li>
+                                <li><a href="#">Çerez Aydınlatma Metni</a>
+                                </li>
+                                <li><a href="#">KVK İşleme Politikası</a>
+                                </li>
+                                <li><a href="#">Veri Sahibi Başvuru Formu</a>
+                                </li>
+                                <li><a href="#">Güvenlik Açığı Bildirim Programı</a>
+                                </li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <h3>Güvenli Alışveriş</h3>
+                            <ul class="footer-links">
+                                <li><a href="#">Bilgi Toplumu Hizmetleri</a>
+                                </li>
+                                <li><a href="#">e-Arşiv Fatura Sorgulama</a>
+                                </li>
+                                <li><a href="#">Yardım</a>
+                                </li>
+                                <li><a href="#">Kurumsal Satış</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="container-fluid">
+                    <div class="copyright"> Copyright 2023 | b-shopping. San. & Tic. A.Ş</div>
+                </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+    <button onclick="topFunction()" id="myBtn" style="font-size: 15px;"><i class="fa-solid fa-arrow-up fa-lg" style="color: #ffffff;"></i> Başa Dön!</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+</body>
+</html>
